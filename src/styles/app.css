@@ -1,3 +1,33 @@
+@import './typography.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html {
+		@apply h-full;
+		@apply text-base;
+		@apply font-serif;
+		@apply antialiased;
+	}
+
+	body {
+		@apply bg-grey-1;
+		@apply text-grey-11;
+		@apply dark:bg-grey-11;
+		@apply dark:text-grey-1;
+		@apply h-full;
+		@apply text-base;
+		@apply transition-colors;
+		@apply ease-in-out;
+		@apply duration-100;
+	}
+
+	body > div {
+		@apply relative;
+		@apply min-h-full;
+		@apply flex;
+		@apply flex-col;
+	}
+}
