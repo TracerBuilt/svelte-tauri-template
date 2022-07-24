@@ -11,15 +11,10 @@ const config = {
 	}),
 
 	kit: {
-		adapter: adapter()
-	},
-
-	vite: {
-		resolve: {
-			alias: {
-				$lib: path.resolve('./src/lib'),
-				$components: path.resolve('./src/lib/components')
-			}
+		adapter: adapter(),
+		alias: {
+			$lib: path.resolve('./src/lib'),
+			$components: path.resolve('./src/lib/components')
 		}
 	}
 }
