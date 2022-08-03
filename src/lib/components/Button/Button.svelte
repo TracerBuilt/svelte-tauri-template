@@ -1,4 +1,10 @@
 <script lang="ts">
+	export let primary = true
+	export let size = 'normal'
 </script>
 
-<button class="flex items-center justify-center bg-blue-8 px-2 py-1 text-white"><slot /></button>
+<button
+	class={`asd flex items-center justify-center px-[0.5em] py-[0.25em] ${
+		primary ? 'bg-blue-7 text-white' : 'border border-blue-11 text-blue-11'
+	} ${size === 'small' ? 'text-sm' : size === 'normal' ? 'text-base' : 'text-lg'}`}><slot /></button
+>

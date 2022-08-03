@@ -2,4 +2,6 @@
 	import '../styles/app.css'
 </script>
 
-<slot />
+<main class="flex-1">
+	<slot />
+</main>
