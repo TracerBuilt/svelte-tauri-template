@@ -1,7 +1,6 @@
 <script lang="ts">
-	import Button from '$components/Button/Button.svelte'
 </script>
 
-<div class="flex h-full w-full items-center justify-center">
-	<Button>Stuff</Button>
+<div class="flex h-full w-full flex-col items-center justify-center p-2">
+	<h1>Hello, World!</h1>
 </div>
